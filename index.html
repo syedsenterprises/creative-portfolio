@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Alex Morgan — Creative Developer &amp; Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#faf9f6;color:#141414;font-family:'Inter',sans-serif}
+header{max-width:1060px;margin:0 auto;padding:20px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:22px}
+.fbtn{border:2px solid #141414;background:#fff;padding:9px 16px;border-radius:999px;font-weight:600;cursor:pointer;margin:0 4px}
+.fbtn.on{background:#141414;color:#fff}
+.hero{max-width:1060px;margin:0 auto;padding:46px 22px 10px}
+.hero h1{font-family:'Syne',sans-serif;font-size:72px;line-height:.95;margin:0}
+.hero h1 span{color:#ff5c1a}
+.hero p{font-size:18px;color:#555;max-width:560px}
+.marquee{background:#141414;color:#fff;overflow:hidden;padding:12px 0;margin:26px 0;font-family:'Syne',sans-serif;letter-spacing:.1em;white-space:nowrap}
+h2{font-family:'Syne',sans-serif;font-size:34px;max-width:1060px;margin:30px auto 4px;padding:0 22px}
+.sub{max-width:1060px;margin:0 auto 18px;padding:0 22px;color:#555}
+.work{max-width:1060px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.proj{border-radius:18px;padding:22px;color:#fff;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end}
+.proj b{font-family:'Syne',sans-serif;font-size:25px}.proj p{opacity:.9}
+.skills{max-width:1060px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sk{background:#fff;border:1px solid #e5e2dc;border-radius:14px;padding:18px}
+.bar{height:8px;background:#eee;border-radius:99px;margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;background:#ff5c1a}
+.contact{max-width:1060px;margin:30px auto;padding:26px;background:#141414;color:#fff;border-radius:20px;text-align:center}
+.contact input,.contact textarea{width:100%;max-width:480px;padding:12px;margin:6px 0;border:0;border-radius:10px;font-size:15px;display:block;margin-left:auto;margin-right:auto}
+.contact button{background:#ff5c1a;color:#fff;border:0;padding:13px 26px;border-radius:999px;font-weight:700;cursor:pointer;margin-top:10px}
+.ok{color:#7ee2a8;margin-top:12px;display:none}
+footer{text-align:center;color:#888;padding:22px;font-size:13px}
+@media(max-width:700px){.hero h1{font-size:46px}.work,.skills{grid-template-columns:1fr}}
+</style></head><body>
+<header><div class="logo">AM©</div><div><button class="fbtn on" onclick="flt('all',this)">All work</button><button class="fbtn" onclick="flt('web',this)">Web</button><button class="fbtn" onclick="flt('brand',this)">Brand</button><button class="fbtn" onclick="flt('app',this)">Apps</button></div></header>
+<section class="hero"><h1>Design that ships.<br/>Code that <span>looks good.</span></h1><p>I'm Alex — a creative developer building websites, brands and products for startups that want to stand out without slowing down. Filter the work by type, or send a message below.</p></section>
+<div class="marquee">WEB DESIGN ✦ BRANDING ✦ FRONT-END ✦ E-COMMERCE ✦ LANDING PAGES ✦&nbsp;</div>
+<h2>Selected work</h2><p class="sub">A few favourites, 2023–2026.</p>
+<section class="work" id="work"></section>
+<h2>Skills</h2><p class="sub">Honest levels, not buzzwords.</p>
+<section class="skills">
+<div class="sk"><b>HTML / CSS / JS</b><div class="bar"><i style="width:95%"></i></div></div>
+<div class="sk"><b>React &amp; Next.js</b><div class="bar"><i style="width:85%"></i></div></div>
+<div class="sk"><b>UI / Brand design</b><div class="bar"><i style="width:90%"></i></div></div>
+</section>
+<section class="contact"><h2 style="color:#fff;margin:0 0 8px">Have a project in mind?</h2><p>Currently booking for next month.</p>
+<form onsubmit="send(event)"><input id="mname" required placeholder="Your name"/><input id="mmail" required type="email" placeholder="Email"/><textarea id="mmsg" required placeholder="Tell me about the project…" rows="4"></textarea><button>Send message →</button><div class="ok" id="ok">Message saved. Alex will reply to you once this form is connected to an email service. (Demo: stored locally only.)</div></form></section>
+<footer>Portfolio demo theme · "Alex Morgan" is a sample persona — swap the name, projects and links for your own.</footer>
+<script>
+const W=[{t:'Nova Coffee — Store + Story',d:'E-commerce site that doubled online orders in 3 months.',c:'web',g:'linear-gradient(120deg,#ff5c1a,#ff9a3d)'},{t:'Orbit SaaS — Landing',d:'Launch page, 42% signup conversion.',c:'web',g:'linear-gradient(120deg,#141414,#3a3a3a)'},{t:'Pulse Fitness App',d:'Brand + product UI for a fitness startup.',c:'app',g:'linear-gradient(120deg,#3b82f6,#7c3aed)'},{t:'Terra Travel Journal',d:'Editorial travel site with booking flow.',c:'web',g:'linear-gradient(120deg,#0d9488,#14b8a6)'},{t:'Bloom Botanics — Brand',d:'Full identity for a plant shop: logo, pack, voice.',c:'brand',g:'linear-gradient(120deg,#4d7c0f,#65a30d)'},{t:'Fable Fintech — App',d:'Mobile banking UI, 4.9★ app store rating.',c:'app',g:'linear-gradient(120deg,#be185d,#e11d48)'}];
+function render(f){document.getElementById('work').innerHTML=W.filter(w=>f==='all'||w.c===f).map(w=>`<div class="proj" style="background:${w.g}"><b>${w.t}</b><p>${w.d}</p></div>`).join('')}
+function flt(f,el){document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('on'));el.classList.add('on');render(f)}
+function send(e){e.preventDefault();let m={n:document.getElementById('mname').value,e:document.getElementById('mmail').value,msg:document.getElementById('mmsg').value};let all=JSON.parse(localStorage.getItem('pf_msgs')||'[]');all.push(m);localStorage.setItem('pf_msgs',JSON.stringify(all));document.getElementById('ok').style.display='block'}
+render('all');
+</script></body></html>
