@@ -1,50 +1,62 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Alex Morgan — Creative Developer &amp; Designer</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-<style>
-*{box-sizing:border-box}body{margin:0;background:#faf9f6;color:#141414;font-family:'Inter',sans-serif}
-header{max-width:1060px;margin:0 auto;padding:20px 22px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-family:'Syne',sans-serif;font-weight:800;font-size:22px}
-.fbtn{border:2px solid #141414;background:#fff;padding:9px 16px;border-radius:999px;font-weight:600;cursor:pointer;margin:0 4px}
-.fbtn.on{background:#141414;color:#fff}
-.hero{max-width:1060px;margin:0 auto;padding:46px 22px 10px}
-.hero h1{font-family:'Syne',sans-serif;font-size:72px;line-height:.95;margin:0}
-.hero h1 span{color:#ff5c1a}
-.hero p{font-size:18px;color:#555;max-width:560px}
-.marquee{background:#141414;color:#fff;overflow:hidden;padding:12px 0;margin:26px 0;font-family:'Syne',sans-serif;letter-spacing:.1em;white-space:nowrap}
-h2{font-family:'Syne',sans-serif;font-size:34px;max-width:1060px;margin:30px auto 4px;padding:0 22px}
-.sub{max-width:1060px;margin:0 auto 18px;padding:0 22px;color:#555}
-.work{max-width:1060px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.proj{border-radius:18px;padding:22px;color:#fff;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end}
-.proj b{font-family:'Syne',sans-serif;font-size:25px}.proj p{opacity:.9}
-.skills{max-width:1060px;margin:0 auto;padding:0 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.sk{background:#fff;border:1px solid #e5e2dc;border-radius:14px;padding:18px}
-.bar{height:8px;background:#eee;border-radius:99px;margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;background:#ff5c1a}
-.contact{max-width:1060px;margin:30px auto;padding:26px;background:#141414;color:#fff;border-radius:20px;text-align:center}
-.contact input,.contact textarea{width:100%;max-width:480px;padding:12px;margin:6px 0;border:0;border-radius:10px;font-size:15px;display:block;margin-left:auto;margin-right:auto}
-.contact button{background:#ff5c1a;color:#fff;border:0;padding:13px 26px;border-radius:999px;font-weight:700;cursor:pointer;margin-top:10px}
-.ok{color:#7ee2a8;margin-top:12px;display:none}
-footer{text-align:center;color:#888;padding:22px;font-size:13px}
-@media(max-width:700px){.hero h1{font-size:46px}.work,.skills{grid-template-columns:1fr}}
-</style></head><body>
-<header><div class="logo">AM©</div><div><button class="fbtn on" onclick="flt('all',this)">All work</button><button class="fbtn" onclick="flt('web',this)">Web</button><button class="fbtn" onclick="flt('brand',this)">Brand</button><button class="fbtn" onclick="flt('app',this)">Apps</button></div></header>
-<section class="hero"><h1>Design that ships.<br/>Code that <span>looks good.</span></h1><p>I'm Alex — a creative developer building websites, brands and products for startups that want to stand out without slowing down. Filter the work by type, or send a message below.</p></section>
-<div class="marquee">WEB DESIGN ✦ BRANDING ✦ FRONT-END ✦ E-COMMERCE ✦ LANDING PAGES ✦&nbsp;</div>
-<h2>Selected work</h2><p class="sub">A few favourites, 2023–2026.</p>
-<section class="work" id="work"></section>
-<h2>Skills</h2><p class="sub">Honest levels, not buzzwords.</p>
-<section class="skills">
-<div class="sk"><b>HTML / CSS / JS</b><div class="bar"><i style="width:95%"></i></div></div>
-<div class="sk"><b>React &amp; Next.js</b><div class="bar"><i style="width:85%"></i></div></div>
-<div class="sk"><b>UI / Brand design</b><div class="bar"><i style="width:90%"></i></div></div>
-</section>
-<section class="contact"><h2 style="color:#fff;margin:0 0 8px">Have a project in mind?</h2><p>Currently booking for next month.</p>
-<form onsubmit="send(event)"><input id="mname" required placeholder="Your name"/><input id="mmail" required type="email" placeholder="Email"/><textarea id="mmsg" required placeholder="Tell me about the project…" rows="4"></textarea><button>Send message →</button><div class="ok" id="ok">Message saved. Alex will reply to you once this form is connected to an email service. (Demo: stored locally only.)</div></form></section>
-<footer>Portfolio demo theme · "Alex Morgan" is a sample persona — swap the name, projects and links for your own.</footer>
+<title>Design that ships. Code that looks good. — Alex Morgan — Creative Portfolio</title>
+<meta name="description" content="Alex Morgan — creative developer and designer. Websites, brands and products for startups. Sample portfolio."/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://syedsenterprises.github.io/creative-portfolio/"/>
+<meta property="og:type" content="website"/><meta property="og:site_name" content="Alex Morgan — Creative Portfolio"/>
+<meta property="og:title" content="Design that ships. Code that looks good. — Alex Morgan — Creative Portfolio"/><meta property="og:description" content="Alex Morgan — creative developer and designer. Websites, brands and products for startups. Sample portfolio."/><meta property="og:url" content="https://syedsenterprises.github.io/creative-portfolio/"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Design that ships. Code that looks good. — Alex Morgan — Creative Portfolio"/><meta name="twitter:description" content="Alex Morgan — creative developer and designer. Websites, brands and products for startups. Sample portfolio."/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://syedsenterprises.github.io/creative-portfolio/#org", "name": "Alex Morgan — Creative Portfolio", "url": "https://syedsenterprises.github.io/creative-portfolio/"}, {"@type": "WebSite", "@id": "https://syedsenterprises.github.io/creative-portfolio/#site", "url": "https://syedsenterprises.github.io/creative-portfolio/", "name": "Alex Morgan — Creative Portfolio", "publisher": {"@id": "https://syedsenterprises.github.io/creative-portfolio/#org"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://syedsenterprises.github.io/creative-portfolio/"}, {"@type": "ListItem", "position": 2, "name": "Design that ships. Code that looks good.", "item": "https://syedsenterprises.github.io/creative-portfolio/"}]}]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fraunces:wght@700&display=swap" rel="stylesheet"/>
+<style>*{box-sizing:border-box}body{margin:0;background:#fafaf9;color:#1c1917;font-family:'Inter',sans-serif}
+a{color:#7c3aed}header{max-width:1100px;margin:0 auto;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.logo{font-family:'Fraunces',serif;font-size:26px;color:#7c3aed;text-decoration:none}.logo span{color:#f59e0b}
+nav a{margin:0 10px;text-decoration:none;color:#1c1917;font-weight:500}nav a.on{color:#f59e0b;border-bottom:2px solid #f59e0b}
+.wrap{max-width:1100px;margin:0 auto;padding:10px 22px 30px}
+h1{font-family:'Fraunces',serif;font-size:42px;line-height:1.1}h2{font-family:'Fraunces',serif;font-size:30px}h3{font-size:19px}
+.btn{background:#7c3aed;color:#fff;border:0;padding:12px 22px;border-radius:999px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.btn2{background:#f59e0b;color:#fff;border:0;padding:11px 20px;border-radius:999px;font-weight:700;cursor:pointer}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:#ffffff;border:1px solid #e7e5e4;border-radius:16px;padding:20px}
+.card p{color:#57534e}input,select,textarea{width:100%;padding:12px;margin:6px 0;border:1px solid #e7e5e4;border-radius:10px;font-size:15px;font-family:inherit}
+.ok{background:#e6f4ea;color:#1e5c2e;padding:12px;border-radius:10px;margin-top:12px;display:none}
+footer{max-width:1100px;margin:20px auto;padding:20px 22px;border-top:1px solid #e7e5e4;color:#57534e;font-size:13px;text-align:center}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center}
+.tag{color:#57534e;font-size:17px}
+.chatbtn{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:#f59e0b;color:#fff;border:0;font-size:26px;cursor:pointer;box-shadow:0 10px 26px rgba(0,0,0,.3);z-index:60}
+.chatpanel{position:fixed;right:20px;bottom:92px;width:360px;max-width:92vw;height:480px;max-height:70vh;background:#fff;color:#222;border-radius:18px;box-shadow:0 16px 40px rgba(0,0,0,.3);display:none;flex-direction:column;overflow:hidden;z-index:60}
+.chatpanel.open{display:flex}
+.chathead{background:#7c3aed;color:#fff;padding:14px 16px}.chathead b{font-size:16px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#4ade80;margin-right:6px}
+.chatmsgs{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:10px}
+.msg{max-width:85%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.45}
+.msg.bot{background:#f1f5f9;align-self:flex-start}.msg.user{background:#7c3aed;color:#fff;align-self:flex-end}
+.chips{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 10px}.chips button{background:#f1f5f9;border:1px solid #e2e8f0;padding:6px 11px;border-radius:999px;cursor:pointer;font-size:12px}
+.chatin{display:flex;gap:8px;padding:10px;border-top:1px solid #eee}.chatin input{margin:0}.chatin button{background:#f59e0b;color:#fff;border:0;padding:11px 16px;border-radius:10px;font-weight:700;cursor:pointer}
+.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,90px);background:#1f2937;color:#fff;padding:15px 20px;border-radius:999px;font-weight:600;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:.3s;z-index:70;opacity:0;pointer-events:none;max-width:92vw;text-align:center}
+.toast.show{transform:translate(-50%,0);opacity:1;pointer-events:auto}
+.toast button{background:#f59e0b;color:#fff;border:0;padding:7px 14px;border-radius:999px;margin-left:12px;cursor:pointer;font-weight:700}
+.pulse{animation:pulse .5s}@keyframes pulse{50%{transform:scale(1.12)}}
+.drawer{position:fixed;top:0;right:0;width:360px;max-width:92vw;height:100%;background:#fff;color:#222;box-shadow:-8px 0 30px rgba(0,0,0,.2);padding:22px;overflow:auto;transform:translateX(110%);transition:.25s;z-index:65}
+.drawer.open{transform:none}
+.line{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-bottom:1px solid #eee;align-items:center}
+.qty button{width:26px;height:26px;border-radius:50%;border:1px solid #ccc;background:#fff;cursor:pointer;font-weight:700}
+@media(max-width:700px){.grid3,.grid2,.hero{grid-template-columns:1fr}h1{font-size:32px}}</style></head><body>
+<header><a class="logo" href="index.html">Alex<span>Morgan</span></a><nav><a href="index.html" class="on">Home</a><a href="work.html" class="">Work</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a></nav></header>
+<main class="wrap"><section class="hero"><div><h1>Design that ships. Code that looks good.</h1><p class="tag">I am Alex — a creative developer building websites, brands and products for startups that want to stand out without slowing down. Filter the work by type, or send a message below.</p><p><a class="btn" href="work.html">See selected work →</a> <a class="btn2" href="contact.html">Have a project in mind?</a></p><p style="color:#57534e;font-size:13px">Sample persona: Alex Morgan is a fictional demo profile used to show this portfolio theme.</p></div><div class="card"><h3>Currently booking for next month</h3><p>WEB DESIGN ✦ BRANDING ✦ FRONT-END ✦ E-COMMERCE ✦ LANDING PAGES ✦</p></div></section>
+<h2>Selected work</h2><div class="grid3"><div class="card proj" data-cat="web"><h3>Nova Coffee — Store + Story</h3><p>WEB · 2026</p><p>A coffee store with its roasting story woven through every page.</p></div><div class="card proj" data-cat="brand"><h3>Bloom Botanics — Brand</h3><p>BRAND · 2025</p><p>Identity, packaging and a plant-care voice for a botanical startup.</p></div><div class="card proj" data-cat="app"><h3>Pulse Fitness App</h3><p>APP · 2026</p><p>Workout tracking with a design that survives sweaty thumbs.</p></div></div>
+<h2>Skills</h2><p>Honest levels, not buzzwords.</p><div class="grid3"><div class="card"><h3>HTML / CSS / JS</h3><p>Expert — 8 years.</p></div><div class="card"><h3>React & Next.js</h3><p>Advanced — 5 years.</p></div><div class="card"><h3>UI / Brand design</h3><p>Advanced — 6 years.</p></div></div></main>
+<footer>Alex Morgan — Creative Portfolio · Sample portfolio persona — Alex Morgan is a fictional demo profile, not a real person.<br/><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a></footer>
+<button class="chatbtn" onclick="toggleChat()">💬</button><div class="chatpanel" id="chatpanel"><div class="chathead"><span class="dot"></span><b>Alex Bot</b><span style="opacity:.8"> · Online · Demo assistant, replies instantly</span><button style="float:right;background:none;border:0;color:#fff;font-size:18px;cursor:pointer" onclick="toggleChat()">×</button></div><div class="chatmsgs" id="chatmsgs"></div><div class="chips"><button onclick="chip(&quot;What services?&quot;)">What services?</button><button onclick="chip(&quot;Are you available?&quot;)">Are you available?</button><button onclick="chip(&quot;Show web projects&quot;)">Show web projects</button></div><div class="chatin"><input id="chatinput" placeholder="Ask anything…" onkeydown="if(event.key==='Enter')sendChat()"/><button onclick="sendChat()">Send</button></div></div>
+<script>const BOT={"name": "Alex Bot", "greeting": "Hi, I am the demo assistant for this portfolio. Ask about projects, services or availability.", "chips": ["What services?", "Are you available?", "Show web projects"], "rules": [{"k": ["service"], "a": "Web design, branding, front-end builds, e-commerce and landing pages. See the Work page for examples."}, {"k": ["avail", "book", "hire"], "a": "Currently booking for next month, according to this demo profile. Use the contact form."}, {"k": ["web"], "a": "Web projects include Nova Coffee, Orbit SaaS and Terra Travel Journal — filter by Web on the Work page."}, {"k": ["price", "cost"], "a": "Projects in this demo range from $1,500 for a landing page to $12,000 for a full store build."}], "fallback": "I am a demo assistant. I can help with prices, hours, bookings and services. For a real person, use the contact page."};
+function botReply(q){q=q.toLowerCase();for(let r of BOT.rules){if(r.k.some(k=>q.includes(k)))return r.a}return BOT.fallback}
+let greeted=false;
+function toggleChat(){let p=document.getElementById('chatpanel');p.classList.toggle('open');if(p.classList.contains('open')&&!greeted){greeted=true;addMsg('bot',BOT.greeting)}}
+function addMsg(who,text){let m=document.createElement('div');m.className='msg '+who;m.textContent=text;document.getElementById('chatmsgs').appendChild(m);document.getElementById('chatmsgs').scrollTop=99999}
+function sendChat(text){let inp=document.getElementById('chatinput');let q=(text||inp.value).trim();if(!q)return;addMsg('user',q);inp.value='';let t=document.createElement('div');t.className='msg bot';t.id='typing';t.textContent='Typing…';document.getElementById('chatmsgs').appendChild(t);setTimeout(()=>{t.remove();addMsg('bot',botReply(q))},700)}
+function chip(q){document.getElementById('chatinput').value=q;sendChat()}</script>
 <script>
-const W=[{t:'Nova Coffee — Store + Story',d:'E-commerce site that doubled online orders in 3 months.',c:'web',g:'linear-gradient(120deg,#ff5c1a,#ff9a3d)'},{t:'Orbit SaaS — Landing',d:'Launch page, 42% signup conversion.',c:'web',g:'linear-gradient(120deg,#141414,#3a3a3a)'},{t:'Pulse Fitness App',d:'Brand + product UI for a fitness startup.',c:'app',g:'linear-gradient(120deg,#3b82f6,#7c3aed)'},{t:'Terra Travel Journal',d:'Editorial travel site with booking flow.',c:'web',g:'linear-gradient(120deg,#0d9488,#14b8a6)'},{t:'Bloom Botanics — Brand',d:'Full identity for a plant shop: logo, pack, voice.',c:'brand',g:'linear-gradient(120deg,#4d7c0f,#65a30d)'},{t:'Fable Fintech — App',d:'Mobile banking UI, 4.9★ app store rating.',c:'app',g:'linear-gradient(120deg,#be185d,#e11d48)'}];
-function render(f){document.getElementById('work').innerHTML=W.filter(w=>f==='all'||w.c===f).map(w=>`<div class="proj" style="background:${w.g}"><b>${w.t}</b><p>${w.d}</p></div>`).join('')}
-function flt(f,el){document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('on'));el.classList.add('on');render(f)}
-function send(e){e.preventDefault();let m={n:document.getElementById('mname').value,e:document.getElementById('mmail').value,msg:document.getElementById('mmsg').value};let all=JSON.parse(localStorage.getItem('pf_msgs')||'[]');all.push(m);localStorage.setItem('pf_msgs',JSON.stringify(all));document.getElementById('ok').style.display='block'}
-render('all');
-</script></body></html>
+function filt(c,el){document.querySelectorAll('.proj').forEach(p=>{p.style.display=(c==='all'||p.dataset.cat===c)?'block':'none'});document.querySelectorAll('.fbtn').forEach(b=>b.style.opacity=.6);if(el)el.style.opacity=1}
+function sendPF(ev){ev.preventDefault();let m={name:document.getElementById('pn').value,msg:document.getElementById('pm').value};let all=JSON.parse(localStorage.getItem('pf_msgs')||'[]');all.push(m);localStorage.setItem('pf_msgs',JSON.stringify(all));document.getElementById('pfok').style.display='block'}
+</script>
+
+</body></html>
